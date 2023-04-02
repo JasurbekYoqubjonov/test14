@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width: 1600px;
+}
+.containers{
+    display: flex;
+    justify-content: space-between;
+}
+.containers .col-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    z-index: 999;
+    background-color: #1E2A4F;
+    min-height: 100vh;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.containers .col-right{
+    background: url(https://wallpapers.com/images/hd/4k-nature-waterfall-vca0x9gctkousu5t.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 300px;
+    height: 100vh;
+}
+.containers .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.containers .select{
+    border: 3px solid #1E2A4F;
+    width:90%;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.containers .input{
+    border: none;
+    outline: none;
+    width: 40%;
+    margin: 40px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+}
+.containers .title{
+    color: white;
+    font-size: 45px;
+    margin: 60px 0;
+}
+.containers .temp{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 600;
+
+}
+.containers .weather{
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+.containers .rgba-row{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255,255,255,0.2);
+    justify-content: space-around;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.containers .rgba-row .col{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+
+}
+.containers .rgba-title{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}
+.containers .rgba-text{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+@media(max-width:576px){
+    .containers{
+        display: flex;
+    }
+    .containers .col-left,
+    .containers .col-right{
+        width: 100%;
+    }
+    .containers .col-left{
+        min-height: 20vh;
+    }
+    .containers .col-right{
+        margin-left: 0;
+        padding-top: 40%;
+    }
+    .containers .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containers .select{
+        border: 3px solid #1E2A4F;
+        width:94%;
+        padding: 10px 10px;
+        outline: none;
+        border-radius: 5px;
+    }
+    .containers .input{
+        border: none;
+        outline: none;
+        width: 80%;
+        margin: 20px 0;
+        padding: 10px 15px;
+        border-radius: 10px;
+    
+    }
+    .containers .title{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .containers .temp{
+        font-size: 20px;
+        margin: 5px 0;
+    
+    }
+    .containers .weather{
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .containers .rgba-row{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .containers .rgba-row .col{
+        display: flex;
+        flex-direction: column;
+        padding:3px;
+        margin: 3px;
+        align-items: center;
+    
+    }
+    .containers .rgba-title{
+        color: white;
+        font-size: 13px;
+        margin: 10px;
+        font-weight: 400;
+    }
+    .containers .rgba-text{
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
